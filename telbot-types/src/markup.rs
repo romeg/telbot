@@ -499,13 +499,6 @@ pub enum MessageEntityKind {
 }
 
 impl MessageEntityKind {
-    pub fn code_language(&self) -> Option<&str> {
-        match self {
-            Self::Pre { language } => Some(language),
-            _ => None,
-        }
-    }
-
     pub fn clickable_url(&self) -> Option<&str> {
         match self {
             Self::TextLink { url } => Some(url),
