@@ -483,10 +483,7 @@ pub enum MessageEntityKind {
     /// `monowidth string`
     Code,
     /// ```monowidth block```
-    Pre {
-        /// The programming language of the entity text
-        language: String,
-    },
+    Pre,
     /// clickable text URLs
     TextLink {
         /// Url that will be opened after user taps on the text
